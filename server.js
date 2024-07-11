@@ -24,7 +24,7 @@ app.post('/generate-qr-code', (req, res) => {
 
   qr_svg.pipe(fs.createWriteStream(qrImagePath))
     .on('finish', () => {
-      res.send({ message: 'QR code generated', path: 'qr_img.png' });
+      res.send({ message: 'QR code generated', path: '/qr_img.png' }); // Corrected path
     })
     .on('error', (err) => {
       res.status(500).send({ error: 'Failed to generate QR code' });
