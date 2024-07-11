@@ -1,0 +1,40 @@
+/* Global styles */
+body {
+    font-family: 'Humanistic Sans Serif', sans-serif;
+    padding: 20px;
+  }
+
+  #qr-form {
+    margin-bottom: 20px; /* Space between form and QR code */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #qr-code,
+  #error-msg {
+    text-align: center;
+  }
+  
+ 
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  }
+    .container {
+      text-align: center;
+      margin-top: 50px; /* Adjust as needed */
+    }
+
+    #error-msg {
+      margin-top: 20px;
+    }
